@@ -1,9 +1,11 @@
 package com.service.housepay.models;
 
+import com.service.housepay.enums.ResidentType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.ColumnDefault;
 
 import java.math.BigDecimal;
 import java.util.LinkedHashSet;
@@ -51,11 +53,8 @@ public class Resident {
     @OneToMany(mappedBy = "residentFlatNo")
     private Set<Outstanding> outstandings = new LinkedHashSet<>();
 
-/*
- TODO [Reverse Engineering] create field to map the 'type' column
- Available actions: Define target Java type | Uncomment as is | Remove column mapping
-    @ColumnDefault("'OWNER'")
     @Column(name = "type", columnDefinition = "resident_type not null")
-    private Object type;
-*/
+    @ColumnDefault("'OWNER'")
+    private ResidentType type;
+
 }

@@ -1,5 +1,6 @@
 package com.service.housepay.models;
 
+import com.service.housepay.enums.TransactionType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
@@ -40,11 +41,8 @@ public class Ledger {
     @Column(name = "description", length = Integer.MAX_VALUE)
     private String description;
 
-/*
- TODO [Reverse Engineering] create field to map the 'transaction_type' column
- Available actions: Define target Java type | Uncomment as is | Remove column mapping
     @ColumnDefault("'UPI'")
     @Column(name = "transaction_type", columnDefinition = "transaction_type not null")
-    private Object transactionType;
-*/
+    private TransactionType transactionType;
+
 }
