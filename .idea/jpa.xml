@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JpaBuddyIdeaProjectConfig" migrateIndexesAndConstraints="true" reUseTableSchema="true">
     <option name="migrateIndexesAndConstraints" value="true" />
-    <option name="reLastEntityCreationPackage" value="backend/src/main/java/com/service/housepay/model" />
+    <option name="reLastEntityCreationPackage" value="backend/src/main/java/com/service/housepay/models" />
     <option name="reverseEngineeringLastDbConnectionId" value="f71d120b-bc65-4b64-a94b-f82a56ed8a56" />
   </component>
 </project>
