@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/housepay.iml" filepath="$PROJECT_DIR$/housepay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/housepay.iml" filepath="$PROJECT_DIR$/backend/housepay.iml" />
     </modules>
   </component>
 </project>
